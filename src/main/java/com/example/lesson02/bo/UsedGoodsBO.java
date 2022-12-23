@@ -18,7 +18,10 @@ public class UsedGoodsBO {
 	// input : X (컨트롤러가 아무것도 주지 않음, 요청만 함)
 	// output : List<UsedGoods>
 	public List<UsedGoods> getUsedGoodsList() {
-		return usedGoodsDAO.selectUsedGoodsList();
+		List<UsedGoods> usedGoodsList = usedGoodsDAO.selectUsedGoodsList();
+		return usedGoodsList;
+		
+		// return usedGoodsDAO.selectUsedGoodsList();
 		// (or) List<UsedGoods> usedGoodsList = usedGoodsDAO.selectUsedGoodsList();
 	}
 }
