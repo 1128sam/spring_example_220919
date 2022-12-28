@@ -2,12 +2,12 @@ package com.example.lesson04.model;
 
 import java.util.Date;
 
-public class User {
+public class Student {
 	private int id;
 	private String name;
-	private String yyyymmdd;
+	private String phoneNumber;
 	private String email;
-	private String introduce;
+	private String dreamJob;
 	private Date createdAt;
 	private Date updatedAt;
 
@@ -27,12 +27,12 @@ public class User {
 		this.name = name;
 	}
 
-	public String getYyyymmdd() {
-		return yyyymmdd;
+	public String getPhoneNumber() {
+		return phoneNumber;
 	}
 
-	public void setYyyymmdd(String yyyymmdd) {
-		this.yyyymmdd = yyyymmdd;
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 
 	public String getEmail() {
@@ -43,12 +43,12 @@ public class User {
 		this.email = email;
 	}
 
-	public String getIntroduce() {
-		return introduce;
+	public String getDreamJob() {
+		return dreamJob;
 	}
 
-	public void setIntroduce(String introduce) {
-		this.introduce = introduce;
+	public void setDreamJob(String dreamJob) {
+		this.dreamJob = dreamJob;
 	}
 
 	public Date getCreatedAt() {
