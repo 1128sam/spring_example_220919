@@ -30,8 +30,8 @@ public class Lesson04Ex01Controller {
 	public String addUser(
 			@RequestParam("name") String name, 
 			@RequestParam("yyyymmdd") String yyyymmdd,
-			@RequestParam("email") String email,			
-			@RequestParam("introduce") String introduce) {
+			@RequestParam(value="introduce", required=false) String introduce,
+			@RequestParam("email") String email) {
 			// @RequestParam(value="introduce", required=false) String introduce => null(yes) 허용이면
 
 		// DB insert

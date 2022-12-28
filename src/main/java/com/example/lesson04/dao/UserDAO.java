@@ -1,9 +1,15 @@
 package com.example.lesson04.dao;
 
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserDAO {
 
-	public void addUser(String name, String yyyymmdd, String introduce, String email);
+	public void insertUser(
+			@Param("name") String name, 
+			@Param("yyyymmdd") String yyyymmdd, 
+			@Param("introduce") String introduce, 
+			@Param("email") String email
+			);
 }

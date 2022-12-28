@@ -12,6 +12,6 @@ public class UserBO {
 	private UserDAO userDAO;
 
 	public void addUser(String name, String yyyymmdd, String introduce, String email) {
-		userDAO.addUser(name, yyyymmdd, introduce, email);
+		userDAO.insertUser(name, yyyymmdd, introduce, email);
 	}
 }
