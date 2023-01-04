@@ -4,7 +4,7 @@
  
  <mapper namespace="com.example.lesson04.dao.UserDAO">
  	<insert id="insertUser" parameterType="map">
- 		INSERT INTO `user`
+ 		INSERT INTO `new_user`
  		(
 			`name`
 			, `yyyymmdd`
