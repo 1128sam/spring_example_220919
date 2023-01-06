@@ -67,7 +67,7 @@ public class Lesson06Controller {
 	public String addNameView() {
 		return "lesson06/ex02/addName";
 	}
-	
+
 	// 이름 중복확인 - AJAX 통신 요청
 	@ResponseBody
 	@GetMapping("/ex02/is_duplication")
